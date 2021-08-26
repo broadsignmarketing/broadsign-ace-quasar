@@ -9,6 +9,7 @@
       transition-prev="slide-right"
       transition-next="slide-left"
       class="full-height full-width"
+      v-touch-swipe.mouse.up="openDrawer"
     >
       <q-carousel-slide name="products">
         <MainSlideProducts v-on:showDrawer="openDrawer" />
@@ -61,22 +62,3 @@ export default {
 };
 </script>
 
-<style lang="scss">
-.drawer {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  transform: translateY(100vh);
-  transition: transform 1s;
-  background-color: #fff;
-  border: 10px solid red;
-  pointer-events: none;
-
-  &.active {
-    pointer-events: all;
-    transform: translateY(0%);
-  }
-}
-</style>
