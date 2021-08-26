@@ -8,12 +8,18 @@
       <p>Broadsign Reach</p>
       <p>Broadsign Ayuda</p>
     </div>
+    <button @click="showDrawer()">Open</button>
   </section>
 </template>
 
 <script>
 export default {
   name: "MainSlideProducts",
-  data: () => ({})
+  data: () => ({}),
+  methods: {
+    showDrawer() {
+      this.$emit("showDrawer");
+    }
+  }
 };
 </script>
