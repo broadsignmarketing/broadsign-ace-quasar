@@ -11,13 +11,6 @@ sections:
   match: "**/*"
   templates:
   - slide
-- type: directory
-  path: static/slides
-  label: Slides (replace)
-  create: all
-  match: "**/*"
-  templates:
-  - slide
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
