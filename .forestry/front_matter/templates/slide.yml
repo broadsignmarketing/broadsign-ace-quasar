@@ -9,7 +9,7 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
 - name: challenge
   type: textarea
@@ -47,5 +47,9 @@ fields:
   type: tag_list
   default: []
   label: Products
+- name: verticals
+  type: tag_list
+  default: []
+  label: Verticals
 pages:
 - public/slides/adspace.md
