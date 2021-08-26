@@ -1,4 +1,49 @@
 ---
 label: Slide
 hide_body: true
-fields: []
+fields:
+- name: pictures
+  type: image_gallery
+  config: {}
+  label: Pictures
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: challenge
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Challenge
+- name: audience
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Audience
+- name: solution
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Solution
+- name: location
+  type: text
+  config:
+    required: false
+  label: Location
+- name: products
+  type: tag_list
+  default: []
+  label: Products
