@@ -3,37 +3,37 @@
     <q-carousel
       swipeable
       animated
+      fullscreen
       v-model="slide"
       navigation
       infinite
-      :autoplay="autoplay"
       arrows
       transition-prev="slide-right"
       transition-next="slide-left"
-      @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true"
     >
       <q-carousel-slide name="products">
-        <h1>Products</h1>
+        <MainSlideProducts />
       </q-carousel-slide>
       <q-carousel-slide name="programmatic">
-        <h1>Programmatic</h1>
+        <MainSlideProgrammatic />
       </q-carousel-slide>
       <q-carousel-slide name="verticals">
-        <h1>Verticals</h1>
+        <MainSlideVerticals />
       </q-carousel-slide>
     </q-carousel>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import MainSlideProducts from "../components/MainSlideProducts.vue";
+import MainSlideProgrammatic from "../components/MainSlideProgrammatic.vue";
+import MainSlideVerticals from "../components/MainSlideVerticals.vue";
 
-export default defineComponent({
+export default {
   name: "PageIndex",
+  components: { MainSlideProducts, MainSlideProgrammatic, MainSlideVerticals },
   data: () => ({
-    slide: "products",
-    autoplay: true
+    slide: "products"
   })
-});
+};
 </script>
