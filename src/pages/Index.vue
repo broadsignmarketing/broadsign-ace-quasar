@@ -1,17 +1,39 @@
 <template>
   <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
-      src="~assets/quasar-logo-vertical.svg"
-      style="width: 200px; height: 200px"
+    <q-carousel
+      swipeable
+      animated
+      v-model="slide"
+      navigation
+      infinite
+      :autoplay="autoplay"
+      arrows
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      @mouseenter="autoplay = false"
+      @mouseleave="autoplay = true"
     >
+      <q-carousel-slide name="products">
+        <h1>Products</h1>
+      </q-carousel-slide>
+      <q-carousel-slide name="programmatic">
+        <h1>Programmatic</h1>
+      </q-carousel-slide>
+      <q-carousel-slide name="verticals">
+        <h1>Verticals</h1>
+      </q-carousel-slide>
+    </q-carousel>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: 'PageIndex'
-})
+  name: "PageIndex",
+  data: () => ({
+    slide: "products",
+    autoplay: true
+  })
+});
 </script>
