@@ -48,4 +48,4 @@ fields:
   default: []
   label: Products
 pages:
-- adspace.md
+- static/slides/adspace.md
