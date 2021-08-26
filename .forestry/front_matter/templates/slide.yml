@@ -51,5 +51,26 @@ fields:
   type: tag_list
   default: []
   label: Verticals
+- name: group_products
+  type: field_group
+  config: {}
+  fields:
+  - name: broadsign_control
+    type: boolean
+    label: Broadsign Control
+  - name: broadsign_direct
+    type: boolean
+    label: Broadsign Direct
+  - name: broadsign_publish
+    type: boolean
+    label: Broadsign Publish
+  - name: broadsign_reach
+    type: boolean
+    label: Broadsign Reach
+  - name: ayuda
+    type: boolean
+    label: Ayuda
+  label: Products
 pages:
 - public/slides/adspace.md
+- public/slides/adtower.md
