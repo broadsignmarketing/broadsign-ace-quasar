@@ -3,11 +3,11 @@ layout: blog
 title: Adspace
 date: 2019-10-11T20:43:52.571Z
 gallery:
-  - /uploads/hero_adspace_1.jpg
-  - /uploads/hero_adspace_2.jpg
-  - /uploads/hero_adspace_3.jpg
-  - /uploads/hero_adspace_4.jpg
-  - /uploads/hero_adspace_5.jpg
+  - /uploads/hero_aspace_1.jpg
+  - /uploads/hero_aspace_2.jpg
+  - /uploads/hero_aspace_3.jpg
+  - /uploads/hero_aspace_4.jpg
+  - /uploads/hero_aspace_5.jpg
 categories:
   products:
     - broadsign_control

@@ -3,11 +3,11 @@ layout: blog
 title: Adtower
 date: 2019-10-15T16:13:08.750Z
 gallery:
-  - /uploads/hero_adtower_1.jpg
-  - /uploads/hero_adtower_2.jpg
-  - /uploads/hero_adtower_3.jpg
-  - /uploads/hero_adtower_4.jpg
-  - /uploads/hero_adtower_5.jpg
+  - /uploads/hero_atower_1.jpg
+  - /uploads/hero_atower_2.jpg
+  - /uploads/hero_atower_3.jpg
+  - /uploads/hero_atower_4.jpg
+  - /uploads/hero_atower_5.jpg
 categories:
   products:
     - broadsign_control
