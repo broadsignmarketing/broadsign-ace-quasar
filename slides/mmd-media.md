@@ -3,11 +3,11 @@ layout: blog
 title: MMD Media
 date: 2019-10-11T20:40:14.976Z
 gallery:
-  - /images/uploads/hero_mmd_media_1.jpg
-  - /images/uploads/hero_mmd_media_2.jpg
-  - /images/uploads/hero_mmd_media_3.jpg
-  - /images/uploads/hero_mmd_media_4.jpg
-  - /images/uploads/hero_mmd_media_5.jpg
+  - /uploads/hero_mmd_media_1.jpg
+  - /uploads/hero_mmd_media_2.jpg
+  - /uploads/hero_mmd_media_3.jpg
+  - /uploads/hero_mmd_media_4.jpg
+  - /uploads/hero_mmd_media_5.jpg
 categories:
   products:
     - broadsign_control
@@ -15,6 +15,7 @@ categories:
   verticals:
     - gas_stations
 ---
+
 > Improving the travel experience with DOOH
 
 ## Challenge

@@ -3,7 +3,7 @@ layout: blog
 title: Clear Digital Media
 date: 2019-10-15T16:45:33.961Z
 gallery:
-  - /images/uploads/hero_cdm_1.jpg
+  - /uploads/hero_cdm_1.jpg
 categories:
   products:
     - broadsign_control
@@ -12,6 +12,7 @@ categories:
   verticals:
     - healthcare
 ---
+
 ## Challenge
 
 Use digital signage content to educate hearing-impaired adults on the benefits of hearing devices.

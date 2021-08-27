@@ -3,10 +3,11 @@ layout: blog
 title: Seat
 date: 2019-10-15T17:09:36.110Z
 gallery:
-  - /images/uploads/hero_seat_1.jpg
+  - /uploads/hero_seat_1.jpg
 categories:
   programmatic: true
 ---
+
 > Driving awareness with Programmatic DOOH, Mobile, and Online Ads
 
 ## Seat's Challenge

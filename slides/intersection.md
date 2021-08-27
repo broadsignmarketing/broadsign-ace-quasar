@@ -3,11 +3,11 @@ layout: blog
 title: Intersection
 date: 2019-10-15T17:28:48.328Z
 gallery:
-  - /images/uploads/hero_intersection_1.jpg
-  - /images/uploads/hero_intersection_2.jpg
-  - /images/uploads/hero_intersection_3.jpg
-  - /images/uploads/hero_intersection_4.jpg
-  - /images/uploads/hero_intersection_5.jpg
+  - /uploads/hero_intersection_1.jpg
+  - /uploads/hero_intersection_2.jpg
+  - /uploads/hero_intersection_3.jpg
+  - /uploads/hero_intersection_4.jpg
+  - /uploads/hero_intersection_5.jpg
 categories:
   products:
     - broadsign_control
@@ -19,6 +19,7 @@ categories:
     - smart_cities
     - transit
 ---
+
 ## Challenge
 
 Deliver convenient smart-city functionality like WiFi and wayfinding to pedestrians and transit users, free of charge.

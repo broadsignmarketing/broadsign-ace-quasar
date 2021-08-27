@@ -3,7 +3,7 @@ layout: blog
 title: Health Media Network
 date: 2019-10-11T20:33:27.531Z
 gallery:
-  - /images/uploads/hero_hmn_1.jpg
+  - /uploads/hero_hmn_1.jpg
 categories:
   products:
     - broadsign_control
@@ -11,6 +11,7 @@ categories:
   verticals:
     - healthcare
 ---
+
 ## Challenge
 
 Bridge the gap between patients and medical professionals with informative and educational digital signage content.

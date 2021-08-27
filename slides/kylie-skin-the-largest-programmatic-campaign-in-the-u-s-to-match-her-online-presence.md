@@ -3,8 +3,8 @@ layout: blog
 title: Kylie Skin
 date: 2020-01-28T13:50:15.550Z
 gallery:
-  - /images/uploads/11.png
-  - /images/uploads/12.png
+  - /uploads/11.png
+  - /uploads/12.png
 categories:
   products:
     - broadsign_reach
@@ -13,6 +13,7 @@ categories:
     - outdoor
     - shopping_malls
 ---
+
 > The largest programmatic campaign in the U.S. to match her online presence
 
 ## CHALLENGE

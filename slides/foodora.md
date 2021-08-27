@@ -3,13 +3,14 @@ layout: blog
 title: Foodora
 date: 2019-10-15T17:03:28.243Z
 gallery:
-  - /images/uploads/hero_foodora_1.jpg
-  - /images/uploads/hero_foodora_2.jpg
-  - /images/uploads/hero_foodora_3.jpg
-  - /images/uploads/hero_foodora_4.jpg
+  - /uploads/hero_foodora_1.jpg
+  - /uploads/hero_foodora_2.jpg
+  - /uploads/hero_foodora_3.jpg
+  - /uploads/hero_foodora_4.jpg
 categories:
   programmatic: true
 ---
+
 > Using programmatic DOOH to reach 1m+ viewers
 
 ## Challenge

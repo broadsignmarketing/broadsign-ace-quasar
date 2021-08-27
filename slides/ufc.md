@@ -3,10 +3,11 @@ layout: blog
 title: UFC
 date: 2019-10-15T17:05:38.347Z
 gallery:
-  - /images/uploads/hero_ufc_1.jpg
+  - /uploads/hero_ufc_1.jpg
 categories:
   programmatic: true
 ---
+
 > Last-minute stadium sellout with programmatic DOOH
 
 ## UFC's Challenge

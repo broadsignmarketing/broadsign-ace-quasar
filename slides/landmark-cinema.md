@@ -3,7 +3,7 @@ layout: blog
 title: Landmark Cinema
 date: 2020-01-27T21:32:48.906Z
 gallery:
-  - /images/uploads/hero_landmark.png
+  - /uploads/hero_landmark.png
 categories:
   products:
     - broadsign_control
@@ -11,6 +11,7 @@ categories:
   verticals:
     - cinema
 ---
+
 ## Challenge
 
 Build and deliver age-appropriate and relevant pre-show content mixes that audiences will love.

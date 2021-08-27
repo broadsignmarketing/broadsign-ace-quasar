@@ -3,7 +3,7 @@ layout: blog
 title: Grandi Stazioni
 date: 2019-10-15T17:26:46.003Z
 gallery:
-  - /images/uploads/hero_grandi_stazioni_1.jpg
+  - /uploads/hero_grandi_stazioni_1.jpg
 categories:
   products:
     - broadsign_control
@@ -14,6 +14,7 @@ categories:
     - shopping_malls
     - transit
 ---
+
 ## Challenge
 
 Provide travellers with relevant, timely, and engaging content to enhance their journey.

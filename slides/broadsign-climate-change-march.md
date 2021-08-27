@@ -3,9 +3,9 @@ layout: blog
 title: Climate Strike
 date: 2020-01-28T15:34:07.065Z
 gallery:
-  - /images/uploads/GitHub (2).png
-  - /images/uploads/GitHub (1).png
-  - /images/uploads/GitHub.png
+  - /uploads/GitHub (2).png
+  - /uploads/GitHub (1).png
+  - /uploads/GitHub.png
 categories:
   products:
     - broadsign_reach
@@ -13,6 +13,7 @@ categories:
   verticals:
     - outdoor
 ---
+
 > Broadsign at the Climate Change March
 
 ## CHALLENGE

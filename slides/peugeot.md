@@ -3,10 +3,11 @@ layout: blog
 title: Peugeot
 date: 2019-10-15T17:07:27.162Z
 gallery:
-  - /images/uploads/hero_peugeot_1.jpg
+  - /uploads/hero_peugeot_1.jpg
 categories:
   programmatic: true
 ---
+
 > Driving awareness with data-powered programmatic DOOH
 
 ## Peugeot's Challenge

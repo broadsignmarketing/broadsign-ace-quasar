@@ -3,11 +3,11 @@ layout: blog
 title: JCDecaux
 date: 2019-10-11T20:37:35.255Z
 gallery:
-  - /images/uploads/hero_jcdecaux_1.jpg
-  - /images/uploads/hero_jcdecaux_2.jpg
-  - /images/uploads/hero_jcdecaux_3.jpg
-  - /images/uploads/hero_jcdecaux_4.jpg
-  - /images/uploads/hero_jcdecaux_5.jpg
+  - /uploads/hero_jcdecaux_1.jpg
+  - /uploads/hero_jcdecaux_2.jpg
+  - /uploads/hero_jcdecaux_3.jpg
+  - /uploads/hero_jcdecaux_4.jpg
+  - /uploads/hero_jcdecaux_5.jpg
 categories:
   products:
     - broadsign_control
@@ -15,6 +15,7 @@ categories:
   verticals:
     - outdoor
 ---
+
 ## Challenge
 
 Maintain an international digital out-of-home network that includes thousands of screens and digital outdoor furniture installations.

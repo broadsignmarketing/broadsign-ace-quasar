@@ -3,7 +3,7 @@ layout: blog
 title: Outcome Health
 date: 2019-10-15T17:30:46.546Z
 gallery:
-  - /images/uploads/hero_outcome_health_1.jpg
+  - /uploads/hero_outcome_health_1.jpg
 categories:
   products:
     - broadsign_control
@@ -12,6 +12,7 @@ categories:
   verticals:
     - healthcare
 ---
+
 ## Challenge
 
 Improve patient communication at critical moments by delivering informative health content

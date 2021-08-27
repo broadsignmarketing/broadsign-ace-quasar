@@ -3,11 +3,11 @@ layout: blog
 title: Go2Digital
 date: 2019-10-15T17:23:23.424Z
 gallery:
-  - /images/uploads/hero_go2digital_1.jpg
-  - /images/uploads/hero_go2digital_2.jpg
-  - /images/uploads/hero_go2digital_3.jpg
-  - /images/uploads/hero_go2digital_4.jpg
-  - /images/uploads/hero_go2digital_5.jpg
+  - /uploads/hero_go2digital_1.jpg
+  - /uploads/hero_go2digital_2.jpg
+  - /uploads/hero_go2digital_3.jpg
+  - /uploads/hero_go2digital_4.jpg
+  - /uploads/hero_go2digital_5.jpg
 categories:
   products:
     - broadsign_control
@@ -16,6 +16,7 @@ categories:
     - outdoor
     - smart_cities
 ---
+
 ## Challenge
 
 Establish a national DOOH network comprised of outdoor screens and smart city installations in major cities.

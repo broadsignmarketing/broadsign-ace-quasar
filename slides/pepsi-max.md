@@ -3,10 +3,11 @@ layout: blog
 title: Pepsi Max
 date: 2019-10-15T17:33:00.399Z
 gallery:
-  - /images/uploads/hero_pepsi_1.jpg
+  - /uploads/hero_pepsi_1.jpg
 categories:
   programmatic: true
 ---
+
 > Retargeting fans with programmatic DOOH
 
 ## Pepsi's Challenge

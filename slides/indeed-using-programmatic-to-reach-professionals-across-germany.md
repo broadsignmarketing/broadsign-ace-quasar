@@ -1,9 +1,9 @@
 ---
 layout: blog
-title: 'Indeed '
+title: "Indeed "
 date: 2020-01-27T21:47:45.941Z
 gallery:
-  - /images/uploads/hero_indeed.png
+  - /uploads/hero_indeed.png
 categories:
   products:
     - broadsign_reach
@@ -11,6 +11,7 @@ categories:
   verticals:
     - internal_comms
 ---
+
 > Using programmatic to reach professionals across Germany
 
 ## CHALLENGE

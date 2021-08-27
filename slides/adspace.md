@@ -3,11 +3,11 @@ layout: blog
 title: Adspace
 date: 2019-10-11T20:43:52.571Z
 gallery:
-  - /images/uploads/hero_adspace_1.jpg
-  - /images/uploads/hero_adspace_2.jpg
-  - /images/uploads/hero_adspace_3.jpg
-  - /images/uploads/hero_adspace_4.jpg
-  - /images/uploads/hero_adspace_5.jpg
+  - /uploads/hero_adspace_1.jpg
+  - /uploads/hero_adspace_2.jpg
+  - /uploads/hero_adspace_3.jpg
+  - /uploads/hero_adspace_4.jpg
+  - /uploads/hero_adspace_5.jpg
 categories:
   products:
     - broadsign_control
@@ -15,6 +15,7 @@ categories:
   verticals:
     - shopping_malls
 ---
+
 ## Challenge
 
 Reinvent the shopping experience with dynamic HD screens in mall and retail environments.

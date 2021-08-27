@@ -3,11 +3,11 @@ layout: blog
 title: Primesight
 date: 2019-10-15T17:36:23.674Z
 gallery:
-  - /images/uploads/hero_primesight_1.jpg
-  - /images/uploads/hero_primesight_2.jpg
-  - /images/uploads/hero_primesight_3.jpg
-  - /images/uploads/hero_primesight_4.jpg
-  - /images/uploads/hero_primesight_5.jpg
+  - /uploads/hero_primesight_1.jpg
+  - /uploads/hero_primesight_2.jpg
+  - /uploads/hero_primesight_3.jpg
+  - /uploads/hero_primesight_4.jpg
+  - /uploads/hero_primesight_5.jpg
 categories:
   products:
     - broadsign_control
@@ -17,6 +17,7 @@ categories:
   verticals:
     - outdoor
 ---
+
 ## Challenge
 
 Offer media buyers a seamless DOOH experience with increased accountability.

@@ -3,11 +3,11 @@ layout: blog
 title: Branded Cities
 date: 2019-10-15T16:40:41.089Z
 gallery:
-  - /images/uploads/hero_branded_cities_1.jpg
-  - /images/uploads/hero_branded_cities_2.jpg
-  - /images/uploads/hero_branded_cities_3.jpg
-  - /images/uploads/hero_branded_cities_4.jpg
-  - /images/uploads/hero_branded_cities_5.jpg
+  - /uploads/hero_branded_cities_1.jpg
+  - /uploads/hero_branded_cities_2.jpg
+  - /uploads/hero_branded_cities_3.jpg
+  - /uploads/hero_branded_cities_4.jpg
+  - /uploads/hero_branded_cities_5.jpg
 categories:
   products:
     - broadsign_control
@@ -16,6 +16,7 @@ categories:
   verticals:
     - outdoor
 ---
+
 ## Challenge
 
 Power iconic and unique signage installations in some of the most visible locations in the country.

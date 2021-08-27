@@ -3,9 +3,9 @@ layout: blog
 title: Flix Media
 date: 2019-10-15T17:21:14.850Z
 gallery:
-  - /images/uploads/hero_flix_1.jpg
-  - /images/uploads/hero_flix_2.jpg
-  - /images/uploads/hero_flix_3.jpg
+  - /uploads/hero_flix_1.jpg
+  - /uploads/hero_flix_2.jpg
+  - /uploads/hero_flix_3.jpg
 categories:
   products:
     - broadsign_control
@@ -13,6 +13,7 @@ categories:
   verticals:
     - cinema
 ---
+
 > Enhancing the moviegoer experience with digital signage
 
 ## Challenge

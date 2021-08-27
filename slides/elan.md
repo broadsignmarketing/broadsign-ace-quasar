@@ -3,7 +3,7 @@ layout: blog
 title: Elan
 date: 2019-10-15T17:11:35.059Z
 gallery:
-  - /images/uploads/hero_elan_1.jpg
+  - /uploads/hero_elan_1.jpg
 categories:
   products:
     - broadsign_control
@@ -11,6 +11,7 @@ categories:
   verticals:
     - shopping_malls
 ---
+
 ## Challenge
 
 Deliver ads and content from top brands to hundreds of screens in high-impact malls
