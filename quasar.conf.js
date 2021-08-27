@@ -4,279 +4,235 @@
  */
 
 // Configuration for your app
-// https://v2.quasar.dev/quasar-cli/quasar-conf-js
-
+// https://v1.quasar.dev/quasar-cli/quasar-conf-js
 /* eslint-env node */
 const ESLintPlugin = require("eslint-webpack-plugin");
-const { configure } = require("quasar/wrappers");
 
-module.exports = configure(function (ctx) {
-  return {
-    // https://v2.quasar.dev/quasar-cli/supporting-ts
-    supportTS: false,
+module.exports = function (/* ctx */) {
+	return {
+		// https://v1.quasar.dev/quasar-cli/supporting-ts
+		supportTS: false,
 
-    // https://v2.quasar.dev/quasar-cli/prefetch-feature
-    // preFetch: true,
+		// https://v1.quasar.dev/quasar-cli/prefetch-feature
+		// preFetch: true,
 
-    // app boot file (/src/boot)
-    // --> boot files are part of "main.js"
-    // https://v2.quasar.dev/quasar-cli/boot-files
-    boot: ["i18n"],
+		// app boot file (/src/boot)
+		// --> boot files are part of "main.js"
+		// https://v1.quasar.dev/quasar-cli/boot-files
+		boot: ["i18n"],
 
-    // https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
-    css: ["app.scss"],
+		// https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
+		css: ["app.scss"],
 
-    // https://github.com/quasarframework/quasar/tree/dev/extras
-    extras: [
-      // 'ionicons-v4',
-      // 'mdi-v5',
-      // 'fontawesome-v5',
-      // 'eva-icons',
-      // 'themify',
-      // 'line-awesome',
-      // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
+		// https://github.com/quasarframework/quasar/tree/dev/extras
+		extras: [
+			// 'ionicons-v4',
+			// 'mdi-v5',
+			// 'fontawesome-v5',
+			// 'eva-icons',
+			// 'themify',
+			// 'line-awesome',
+			// 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
-      "roboto-font", // optional, you are not bound to it
-      "material-icons", // optional, you are not bound to it
-    ],
+			"roboto-font", // optional, you are not bound to it
+			"material-icons", // optional, you are not bound to it
+		],
 
-    // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
-    build: {
-      vueRouterMode: "history", // available values: 'hash', 'history'
+		// Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
+		build: {
+			vueRouterMode: "history", // available values: 'hash', 'history'
 
-      // transpile: false,
+			// transpile: false,
 
-      // Add dependencies for transpiling with Babel (Array of string/regex)
-      // (from node_modules, which are by default not transpiled).
-      // Applies only if "transpile" is set to true.
-      // transpileDependencies: [],
+			// Add dependencies for transpiling with Babel (Array of string/regex)
+			// (from node_modules, which are by default not transpiled).
+			// Applies only if "transpile" is set to true.
+			// transpileDependencies: [],
 
-      // rtl: true, // https://v2.quasar.dev/options/rtl-support
-      // preloadChunks: true,
-      // showProgress: false,
-      // gzip: true,
-      // analyze: true,
+			// rtl: false, // https://v1.quasar.dev/options/rtl-support
+			// preloadChunks: true,
+			// showProgress: false,
+			// gzip: true,
+			// analyze: true,
 
-      // Options below are automatically set depending on the env, set them if you want to override
-      // extractCSS: false,
+			// Options below are automatically set depending on the env, set them if you want to override
+			// extractCSS: false,
 
-      // https://v2.quasar.dev/quasar-cli/handling-webpack
-      // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpack(chain) {
-        chain
-          .plugin("eslint-webpack-plugin")
-          .use(ESLintPlugin, [{ extensions: ["js", "vue"] }]);
-      },
-    },
+			// https://v1.quasar.dev/quasar-cli/handling-webpack
+			// "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
+			chainWebpack(chain) {
+				chain.plugin("eslint-webpack-plugin").use(ESLintPlugin, [{ extensions: ["js", "vue"] }]);
+			},
+		},
 
-    // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
-    devServer: {
-      https: false,
-      port: 8080,
-      open: true, // opens browser window automatically
-    },
+		// Full list of options: https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
+		devServer: {
+			https: false,
+			port: 8080,
+			open: true, // opens browser window automatically
+		},
 
-    // https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
-    framework: {
-      config: {},
+		// https://v1.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
+		framework: {
+			iconSet: "material-icons", // Quasar icon set
+			lang: "en-us", // Quasar language pack
+			config: {
+				dark: true,
+			},
+			cssAddon: false,
 
-      // iconSet: 'material-icons', // Quasar icon set
-      // lang: 'en-US', // Quasar language pack
+			// Possible values for "importStrategy":
+			// * 'auto' - (DEFAULT) Auto-import needed Quasar components & directives
+			// * 'all'  - Manually specify what to import
+			importStrategy: "auto",
 
-      // For special cases outside of where the auto-import strategy can have an impact
-      // (like functional components as one of the examples),
-      // you can manually specify Quasar components/directives to be available everywhere:
-      //
-      // components: [],
-      // directives: [],
+			// For special cases outside of where "auto" importStrategy can have an impact
+			// (like functional components as one of the examples),
+			// you can manually specify Quasar components/directives to be available everywhere:
+			//
+			// components: [],
+			// directives: [],
 
-      // Quasar plugins
-      plugins: [],
-    },
+			// Quasar plugins
+			plugins: [],
+		},
 
-    // animations: 'all', // --- includes all animations
-    // https://v2.quasar.dev/options/animations
-    animations: [],
+		// animations: 'all', // --- includes all animations
+		// https://v1.quasar.dev/options/animations
+		animations: [],
 
-    // https://v2.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
-    ssr: {
-      pwa: true,
+		// https://v1.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
+		ssr: {
+			pwa: true,
+		},
 
-      // manualStoreHydration: true,
-      // manualPostHydrationTrigger: true,
+		// https://v1.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
+		pwa: {
+			workboxPluginMode: "GenerateSW", // 'GenerateSW' or 'InjectManifest'
+			workboxOptions: {}, // only for GenerateSW
+			manifest: {
+				name: `Broadsign Ace`,
+				short_name: `Broadsign Ace`,
+				description: `A Slideshow for Broadsign`,
+				display: "standalone",
+				orientation: "landscape",
+				background_color: "#000000",
+				theme_color: "#001464",
+				icons: [
+					{
+						src: "./img/icons/android-chrome-192x192.png",
+						sizes: "192x192",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/android-chrome-512x512.png",
+						sizes: "512x512",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/android-chrome-maskable-192x192.png",
+						sizes: "192x192",
+						type: "image/png",
+						purpose: "maskable",
+					},
+					{
+						src: "./img/icons/android-chrome-maskable-512x512.png",
+						sizes: "512x512",
+						type: "image/png",
+						purpose: "maskable",
+					},
+					{
+						src: "./img/icons/apple-touch-icon-60x60.png",
+						sizes: "60x60",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/apple-touch-icon-76x76.png",
+						sizes: "76x76",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/apple-touch-icon-120x120.png",
+						sizes: "120x120",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/apple-touch-icon-152x152.png",
+						sizes: "152x152",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/apple-touch-icon-180x180.png",
+						sizes: "180x180",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/apple-touch-icon.png",
+						sizes: "180x180",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/favicon-16x16.png",
+						sizes: "16x16",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/favicon-32x32.png",
+						sizes: "32x32",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/msapplication-icon-144x144.png",
+						sizes: "144x144",
+						type: "image/png",
+					},
+					{
+						src: "./img/icons/mstile-150x150.png",
+						sizes: "150x150",
+						type: "image/png",
+					},
+				],
+			},
+		},
 
-      prodPort: 3000, // The default port that the production server should use
-      // (gets superseded if process.env.PORT is specified at runtime)
+		// Full list of options: https://v1.quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
+		cordova: {
+			// noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
+		},
 
-      maxAge: 1000 * 60 * 60 * 24 * 30,
-      // Tell browser when a file from the server should expire from cache (in ms)
+		// Full list of options: https://v1.quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
+		capacitor: {
+			hideSplashscreen: true,
+		},
 
-      chainWebpackWebserver(chain) {
-        chain
-          .plugin("eslint-webpack-plugin")
-          .use(ESLintPlugin, [{ extensions: ["js"] }]);
-      },
+		// Full list of options: https://v1.quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
+		electron: {
+			bundler: "packager", // 'packager' or 'builder'
 
-      middlewares: [
-        ctx.prod ? "compression" : "",
-        "render", // keep this as last one
-      ],
-    },
+			packager: {
+				// https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
+				// OS X / Mac App Store
+				// appBundleId: '',
+				// appCategoryType: '',
+				// osxSign: '',
+				// protocol: 'myapp://path',
+				// Windows only
+				// win32metadata: { ... }
+			},
 
-    // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
-    pwa: {
-      workboxPluginMode: "GenerateSW", // 'GenerateSW' or 'InjectManifest'
-      workboxOptions: {}, // only for GenerateSW
+			builder: {
+				// https://www.electron.build/configuration/configuration
 
-      // for the custom service worker ONLY (/src-pwa/custom-service-worker.[js|ts])
-      // if using workbox in InjectManifest mode
-      chainWebpackCustomSW(chain) {
-        chain
-          .plugin("eslint-webpack-plugin")
-          .use(ESLintPlugin, [{ extensions: ["js"] }]);
-      },
+				appId: "lekevoid",
+			},
 
-      manifest: {
-        name: `Broadsign Ace`,
-        short_name: `Broadsign Ace`,
-        description: `A Slideshow for Broadsign`,
-        display: "standalone",
-        orientation: "landscape",
-        background_color: "#000000",
-        theme_color: "#001464",
-        icons: [
-          {
-            src: "./img/icons/android-chrome-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/android-chrome-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/android-chrome-maskable-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
-            purpose: "maskable",
-          },
-          {
-            src: "./img/icons/android-chrome-maskable-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "maskable",
-          },
-          {
-            src: "./img/icons/apple-touch-icon-60x60.png",
-            sizes: "60x60",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/apple-touch-icon-76x76.png",
-            sizes: "76x76",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/apple-touch-icon-120x120.png",
-            sizes: "120x120",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/apple-touch-icon-152x152.png",
-            sizes: "152x152",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/apple-touch-icon-180x180.png",
-            sizes: "180x180",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/apple-touch-icon.png",
-            sizes: "180x180",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/favicon-16x16.png",
-            sizes: "16x16",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/favicon-32x32.png",
-            sizes: "32x32",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/msapplication-icon-144x144.png",
-            sizes: "144x144",
-            type: "image/png",
-          },
-          {
-            src: "./img/icons/mstile-150x150.png",
-            sizes: "150x150",
-            type: "image/png",
-          },
-        ],
-      },
-    },
+			// More info: https://v1.quasar.dev/quasar-cli/developing-electron-apps/node-integration
+			nodeIntegration: true,
 
-    metaVariables: {
-      appleMobileWebAppCapable: "yes",
-      appleMobileWebAppStatusBarStyle: "black-translucent",
-      appleTouchIcon120: "icons/apple-icon-120x120.png",
-      appleTouchIcon180: "icons/apple-icon-180x180.png",
-      appleTouchIcon152: "icons/apple-icon-152x152.png",
-      appleTouchIcon180: "icons/apple-icon-180x180.png",
-      appleSafariPinnedTab: "icons/safari-pinned-tab.svg",
-      msapplicationTileImage: "icons/msapplication-icon-144x144.png",
-      msapplicationTileColor: "#000000",
-    },
-
-    // Full list of options: https://v2.quasar.dev/quasar-cli/developing-cordova-apps/configuring-cordova
-    cordova: {
-      // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
-    },
-
-    // Full list of options: https://v2.quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
-    capacitor: {
-      hideSplashscreen: true,
-    },
-
-    // Full list of options: https://v2.quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
-    electron: {
-      bundler: "packager", // 'packager' or 'builder'
-
-      packager: {
-        // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
-        // OS X / Mac App Store
-        // appBundleId: '',
-        // appCategoryType: '',
-        // osxSign: '',
-        // protocol: 'myapp://path',
-        // Windows only
-        // win32metadata: { ... }
-      },
-
-      builder: {
-        // https://www.electron.build/configuration/configuration
-
-        appId: "broadsign-ace-quasar",
-      },
-
-      // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpackMain(chain) {
-        chain
-          .plugin("eslint-webpack-plugin")
-          .use(ESLintPlugin, [{ extensions: ["js"] }]);
-      },
-
-      // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
-      chainWebpackPreload(chain) {
-        chain
-          .plugin("eslint-webpack-plugin")
-          .use(ESLintPlugin, [{ extensions: ["js"] }]);
-      },
-    },
-  };
-});
+			extendWebpack(/* cfg */) {
+				// do something with Electron main process Webpack cfg
+				// chainWebpack also available besides this extendWebpack
+			},
+		},
+	};
+};

@@ -1,30 +1,28 @@
 {
-  "name": "broadsign-ace-quasar",
+  "name": "lekevoid",
   "version": "0.0.1",
-  "description": "A Slideshow for Broadsign",
-  "productName": "Broadsign Ace",
-  "author": "Kevin Gagnon <kevin.gagnon@broadsign.com>",
+  "description": "LeKevoid's website",
+  "productName": "LeKevoid",
+  "author": "Kevin Gagnon <gagnon.kev@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
-    "test": "echo \"No test specified\" && exit 0",
-    "develop": "quasar dev"
+    "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
-    "vue-i18n": "^9.0.0-beta.0",
-    "vuex": "^4.0.1"
+    "quasar": "^1.0.0",
+    "vue-i18n": "^8.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.13.14",
-    "@quasar/app": "^3.0.0",
-    "eslint": "^7.14.0",
+    "@quasar/app": "^2.0.0",
+    "@quasar/quasar-app-extension-qmarkdown": "^1.4.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-vue": "^7.0.0",
-    "eslint-webpack-plugin": "^2.4.0",
-    "workbox-webpack-plugin": "^6.0.0"
+    "eslint-plugin-vue": "^7.7.0",
+    "eslint-webpack-plugin": "^2.4.0"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -38,7 +36,7 @@
     "last 5 Opera versions"
   ],
   "engines": {
-    "node": ">= 12.22.1",
+    "node": ">= 10.18.1",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
   }

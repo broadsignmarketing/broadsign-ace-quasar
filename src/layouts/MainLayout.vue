@@ -1,21 +1,17 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-page-container>
-      <router-view />
-    </q-page-container>
-  </q-layout>
+	<q-layout>
+		<router-view />
+	</q-layout>
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
-
-export default defineComponent({
-  name: "MainLayout",
-
-  components: {},
-
-  setup() {
-    return {};
-  }
-});
+export default {
+	name: "MainLayout",
+	components: {},
+	data: () => ({}),
+	computed: {},
+};
 </script>
+
+<style lang="scss">
+</style>
