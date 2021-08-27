@@ -1,18 +1,61 @@
-// app global css in SCSS form
-.drawer {
-  background-color: #fff;
-  border: 10px solid red;
-  height: 100vh;
-  left: 0;
-  pointer-events: none;
-  position: fixed;
-  top: 0;
-  transform: translateY(100vh);
-  transition: transform 1s;
-  width: 100vw;
+.q-carousel {
+	height: 100vh;
+}
 
-  &.active {
-    pointer-events: all;
-    transform: translateY(0%);
-  }
+.page_slide {
+	display: flex;
+	flex-flow: column nowrap;
+	height: 100vh;
+
+	h1 {
+		color: #83DBE7;
+		font-family: "Roboto Black", Arial Black, Helvetica, sans-serif;
+		font-size: calc(max(40px, 5vw));
+		font-variant: small-caps;
+		height: 20%;
+		left: 50%;
+		margin: 0;
+		position: absolute;
+		text-align: center;
+		text-transform: lowercase;
+		top: calc(max(50px, 5vw));
+		transform: translateX(-50%);
+		user-select: none;
+		width: 100%;
+	}
+}
+
+
+.tiles {
+	display: grid;
+	margin: 0 auto;
+	width: 80%;
+	gap: 40px;
+
+	.tile {
+		cursor: pointer;
+		transition: transform 0.3s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+}
+
+.drawer {
+	background-color: #fff;
+	border: 10px solid red;
+	height: 100vh;
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	transform: translateY(100vh);
+	transition: transform 1s;
+	width: 100vw;
+
+	&.active {
+		pointer-events: all;
+		transform: translateY(0%);
+	}
 }

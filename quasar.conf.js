@@ -6,6 +6,7 @@
 // Configuration for your app
 // https://v1.quasar.dev/quasar-cli/quasar-conf-js
 /* eslint-env node */
+const path = require("path");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 module.exports = function (/* ctx */) {
@@ -62,6 +63,9 @@ module.exports = function (/* ctx */) {
 			// "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
 			chainWebpack(chain) {
 				chain.plugin("eslint-webpack-plugin").use(ESLintPlugin, [{ extensions: ["js", "vue"] }]);
+				chain.resolve.alias.merge({
+					slides: path.resolve(__dirname, "./slides"),
+				});
 			},
 		},
 

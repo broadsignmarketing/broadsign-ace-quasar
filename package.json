@@ -1,10 +1,10 @@
 {
-  "name": "lekevoid",
+  "name": "broadsign-ace-quasar",
   "version": "0.0.1",
-  "description": "LeKevoid's website",
-  "productName": "LeKevoid",
-  "author": "Kevin Gagnon <gagnon.kev@gmail.com>",
-  "private": true,
+  "description": "Broadsign Ace",
+  "productName": "Broadsign Ace",
+  "author": "Kevin Gagnon <kevin.gagnon@broadsign.com>",
+  "private": false,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
@@ -12,7 +12,12 @@
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
+    "front-matter": "^4.0.2",
     "quasar": "^1.0.0",
+    "remark": "^14.0.1",
+    "remark-html": "^14.0.0",
+    "remark-preset-lint-recommended": "^6.0.1",
+    "vfile-reporter": "^7.0.2",
     "vue-i18n": "^8.0.0"
   },
   "devDependencies": {
