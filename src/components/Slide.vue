@@ -1,6 +1,6 @@
 <template>
 	<div class="row full-width">
-		<div class="gallery col-6 full-height" v-touch-swipe.mouse.down="closeDrawer">
+		<div class="gallery col-6" v-touch-swipe.mouse.down="closeDrawer">
 			<q-img v-for="(hero, k) in content.gallery" :key="`hero_${k}`" :src="hero" :class="['hero', { active: galleryPos === k }]" />
 			<div class="thumbnails row justify-end">
 				<q-img
@@ -135,6 +135,8 @@ h1 {
 }
 
 .client_slide {
+	user-select: none;
+
 	.q-scrollarea {
 		height: 88vh;
 		max-width: 100%;

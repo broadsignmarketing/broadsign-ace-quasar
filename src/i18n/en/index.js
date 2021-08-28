@@ -9,6 +9,7 @@ export default {
 	broadsign_publish: "Broadsign Publish",
 	broadsign_direct: "Broadsign Direct",
 	ayuda: "Ayuda",
+	campsite: "Campsite",
 	gas_stations: "Gas Stations",
 	healthcare: "Healthcare",
 	hospitality: "Hospitality",
