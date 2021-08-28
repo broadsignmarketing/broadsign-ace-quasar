@@ -16,8 +16,9 @@ export default {
 			.context("../slides", false, /\.md$/)
 			.keys()
 			.map((m) => {
-				const slideID = m.replace(/^\.\//, "");
-				const slide = require(`../slides/${slideID}`).default;
+				const slideFile = m.replace(/^\.\//, "");
+				const slideID = m.replace(/^\.\/|\.md$/g, ""); // Yes, looking for the ./ at the start has to repeat
+				const slide = require(`../slides/${slideFile}`).default;
 				const slideData = fm(slide);
 
 				remark()

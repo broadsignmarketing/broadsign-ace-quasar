@@ -9,18 +9,17 @@
 				transition-prev="slide-right"
 				transition-next="slide-left"
 				class="full-width content-stretch"
-				v-touch-swipe.mouse.up="openDrawer"
+				v-touch-swipe.mouse.up="setDrawer"
 			>
 				<q-carousel-slide class="page_slide" name="products">
-					<MainSlideProducts @showDrawer="openDrawer" />
-					<div>showDrawer: {{ showDrawer }}</div>
+					<MainSlideProducts @setDrawer="(filters) => setFilter(filters)" />
 				</q-carousel-slide>
 				<q-carousel-slide class="page_slide" name="programmatic">
-					<MainSlideProgrammatic @showDrawer="openDrawer" />
+					<MainSlideProgrammatic @showDrawer="setDrawer" />
 					<div>showDrawer: {{ showDrawer }}</div>
 				</q-carousel-slide>
 				<q-carousel-slide class="page_slide" name="verticals">
-					<MainSlideVerticals @showDrawer="openDrawer" />
+					<MainSlideVerticals @showDrawer="setDrawer" />
 					<div>showDrawer: {{ showDrawer }}</div>
 				</q-carousel-slide>
 			</q-carousel>
@@ -48,28 +47,41 @@ export default {
 	data: () => ({
 		slide: "products",
 		showDrawer: false,
-		filters: { product: false, programmatic: false, vertical: false },
+		filters: { products: false, programmatic: false, verticals: false },
 	}),
 	computed: {
 		slides() {
-			return this.$store.state.slides;
+			return Object.values(this.$store.state.slides);
 		},
 	},
 	methods: {
 		closeDrawer() {
 			this.showDrawer = false;
 		},
-		openDrawer() {
+		setDrawer() {
 			this.showDrawer = true;
 		},
 		filtersReset() {
-			this.filters.product = false;
+			this.filters.products = false;
 			this.filters.programmatic = false;
-			this.filters.vertical = false;
+			this.filters.verticals = false;
 		},
-		setFilter(type, val) {
+		setFilter(params) {
 			this.filtersReset();
-			this.filters[type] = val;
+			this.filters[params.type] = params.val;
+		},
+	},
+	watch: {
+		filters: {
+			deep: true,
+			handler(val) {
+				Object.values(this.filters).forEach((v) => {
+					if (v !== false && v.length > 0) {
+						console.log(v);
+						this.setDrawer();
+					}
+				});
+			},
 		},
 	},
 };
