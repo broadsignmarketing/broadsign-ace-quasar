@@ -3,30 +3,26 @@
 		<q-carousel
 			swipeable
 			animated
-			v-model="slidePos"
+			v-model="carouselPos"
 			infinite
 			transition-prev="slide-right"
 			transition-next="slide-left"
 			class="full-width content-stretch"
-			v-touch-swipe.mouse.down="closeDrawer"
 		>
-			<q-carousel-slide v-for="(slide, k) in filteredSlides" :key="`hero_${k}`" class="client_slide row q-p-a-0" :name="k">
-				<div class="gallery col-7 full-height">
-					<q-img v-for="(hero, j) in slide.gallery" :key="`hero_${k}_${j}`" :src="thumb" class="hero" />
-					<div class="thumbnails row justify-end">
-						<q-img v-for="(thumb, j) in slide.gallery" :key="`tb_${k}_${j}`" :src="thumb" class="thumbnail" />
-					</div>
-				</div>
-				<div class="text col-5" v-html="slide.body"></div>
+			<q-carousel-slide v-for="(slide, k) in filteredSlides" :key="`hero_${k}`" :name="k" class="client_slide row no-padding">
+				<Slide :content="slide" @closeDrawer="closeDrawer" />
 			</q-carousel-slide>
 		</q-carousel>
 	</section>
 </template>
 
 <script>
+import Slide from "../components/Slide.vue";
+
 export default {
 	name: "Slideshow",
-	data: () => ({ galleryPos: 1, slidePos: 1 }),
+	components: { Slide },
+	data: () => ({ carouselPos: 1 }),
 	props: { filters: { type: Object, default: () => {} }, slides: { type: Array, default: () => [] } },
 	computed: {
 		filteredSlides() {
@@ -91,32 +87,5 @@ export default {
 	left: 0;
 	top: 0;
 	cursor: default;
-
-	.gallery {
-		position: relative;
-	}
-
-	.hero {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
-
-	.text {
-	}
-}
-
-.thumbnails {
-	position: absolute;
-	height: 140px;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-}
-
-.thumbnail {
-	max-width: 140px;
 }
 </style>

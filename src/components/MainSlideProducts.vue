@@ -2,7 +2,7 @@
 	<section class="products">
 		<h1>Products</h1>
 		<div class="tiles">
-			<q-img v-for="tile in tiles" :key="tile" class="tile" @click="setDrawer('products', tile)" :src="`../img/tile_products_${tile}.png`" />
+			<q-img v-for="tile in tiles" :key="tile" class="tile" @click="setDrawer('products', tile)" :src="require(`../img/tile_products_${tile}.png`)" />
 		</div>
 	</section>
 </template>

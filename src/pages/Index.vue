@@ -23,7 +23,7 @@
 					<div>showDrawer: {{ showDrawer }}</div>
 				</q-carousel-slide>
 			</q-carousel>
-			<div :class="['drawer', { active: showDrawer }]" v-touch-swipe.mouse.down="closeDrawer">
+			<div :class="['drawer', { active: showDrawer }]">
 				<Slideshow @closeDrawer="closeDrawer" :slides="slides" :filters="filters" />
 			</div>
 		</q-page>
