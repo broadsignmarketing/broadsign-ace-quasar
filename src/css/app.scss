@@ -1,3 +1,17 @@
+body {
+	pointer-events: none;
+}
+
+.q-layout {
+	height: 100vh;
+	left: 0;
+	overflow: hidden;
+	pointer-events: all;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
 .q-carousel {
 	height: 100vh;
 }
@@ -6,6 +20,8 @@
 	display: flex;
 	flex-flow: column nowrap;
 	height: 100vh;
+	justify-content: center;
+	margin-top: calc(max(50px, 5vw));
 
 	h1 {
 		color: #83DBE7;
@@ -25,12 +41,12 @@
 	}
 }
 
-
 .tiles {
 	display: grid;
 	margin: 0 auto;
+	max-height: 40vh;
 	width: 80%;
-	gap: 40px;
+	gap: 2vw;
 
 	.tile {
 		cursor: pointer;
