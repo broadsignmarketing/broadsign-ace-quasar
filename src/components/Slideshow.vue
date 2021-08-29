@@ -22,7 +22,7 @@ import Slide from "../components/Slide.vue";
 export default {
 	name: "Slideshow",
 	components: { Slide },
-	data: () => ({ carouselPos: 1 }),
+	data: () => ({ carouselPos: 0 }),
 	props: { filters: { type: Object, default: () => {} }, slides: { type: Array, default: () => [] } },
 	computed: {
 		filteredSlides() {
