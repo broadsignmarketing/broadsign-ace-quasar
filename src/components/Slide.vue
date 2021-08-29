@@ -12,7 +12,7 @@
 				/>
 			</div>
 		</div> -->
-		<q-carousel animated v-model="galleryPos" thumbnails infinite class="col-6">
+		<q-carousel animated v-model="galleryPos" thumbnails infinite class="col-6" v-touch-swipe.mouse.down="closeDrawer">
 			<q-carousel-slide v-for="(hero, k) in content.gallery" :key="`hero_${k}`" :name="k" :img-src="hero" />
 		</q-carousel>
 		<div class="content column col-6">
