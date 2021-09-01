@@ -31,6 +31,4 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-
-# Heavy files, Photoshop etc.
-/src/assets/PSD
+.sass-cache

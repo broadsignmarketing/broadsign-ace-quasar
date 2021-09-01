@@ -1,0 +1,19 @@
+@import "./slides_styles";
+
+:root {
+	color-scheme: dark;
+}
+
+body {
+	@extend %slides_styles;
+	background: linear-gradient(to bottom, #250000 0%, #03001C 50%, #011E26 100%);
+	background: transparent none;
+}
+
+img {
+	height: 72px;
+	margin-right: 10px;
+	max-height: 7vmax;
+	max-width: 8vmax;
+	width: 90px;
+}
