@@ -9,7 +9,6 @@
 				transition-prev="slide-right"
 				transition-next="slide-left"
 				class="full-width content-stretch"
-				v-touch-swipe.mouse.up="setDrawer"
 			>
 				<q-carousel-slide class="page_slide" name="products">
 					<MainSlideProducts @setDrawer="(filters) => setFilter(filters)" />
