@@ -14,12 +14,10 @@
 					<MainSlideProducts @setDrawer="(filters) => setFilter(filters)" />
 				</q-carousel-slide>
 				<q-carousel-slide class="page_slide" name="programmatic">
-					<MainSlideProgrammatic @showDrawer="setDrawer" />
-					<div>showDrawer: {{ showDrawer }}</div>
+					<MainSlideProgrammatic @setDrawer="(filters) => setFilter(filters)" />
 				</q-carousel-slide>
 				<q-carousel-slide class="page_slide" name="verticals">
-					<MainSlideVerticals @showDrawer="setDrawer" />
-					<div>showDrawer: {{ showDrawer }}</div>
+					<MainSlideVerticals @setDrawer="(filters) => setFilter(filters)" />
 				</q-carousel-slide>
 			</q-carousel>
 			<div :class="['drawer', { active: showDrawer }]">
@@ -68,6 +66,7 @@ export default {
 		setFilter(params) {
 			this.filtersReset();
 			this.filters[params.type] = params.val;
+			console.log(this.filters);
 		},
 	},
 	watch: {
@@ -76,7 +75,6 @@ export default {
 			handler(val) {
 				Object.values(this.filters).forEach((v) => {
 					if (v !== false && v.length > 0) {
-						console.log(v);
 						this.setDrawer();
 					}
 				});

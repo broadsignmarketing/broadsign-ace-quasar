@@ -2,7 +2,7 @@
 	<section class="products">
 		<h1>Products</h1>
 		<div class="tiles">
-			<q-img v-for="tile in tiles" :key="tile" class="tile" @click="setDrawer('products', tile)" :src="require(`../img/tile_products_${tile}.png`)" />
+			<q-img v-for="tile in tiles" :key="tile" class="tile" @click="setDrawer(tile)" :src="require(`../img/tile_products_${tile}.png`)" fit="contain" />
 		</div>
 	</section>
 </template>
@@ -16,14 +16,14 @@ export default {
 
 	methods: {
 		setDrawer(type, val) {
-			this.$emit("setDrawer", { type, val });
+			this.$emit("setDrawer", { type: "products", val });
 		},
 	},
 };
 </script>
 
-<style lang="scss">
-.tiles {
-	grid-template-columns: repeat(5, 1fr);
+<style lang="scss" scoped>
+.tile {
+	flex: 0 0 18%;
 }
 </style>

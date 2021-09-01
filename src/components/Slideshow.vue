@@ -38,7 +38,8 @@ export default {
 				} else if (this.filters.programmatic !== false) {
 					return this.slides
 						.map((slide) => {
-							if (slide.attributes.categories.programmatic && slide.attributes.categories.programmatic.includes(this.filters.programmatic)) {
+							console.log(this.filters.programmatic, slide.id.replace("-", "_"));
+							if (slide.attributes.categories.programmatic && slide.id.replace(/\-/g, "_").match(this.filters.programmatic)) {
 								return this.singleSlide(slide);
 							}
 						})
