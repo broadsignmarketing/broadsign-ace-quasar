@@ -5,6 +5,7 @@
   "productName": "Broadsign Ace",
   "author": "Kevin Gagnon <kevin.gagnon@broadsign.com>",
   "private": false,
+  "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
